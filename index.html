@@ -193,6 +193,62 @@
       border: 2px solid #c62828;
     }
 
+    /* Packing & Delivery Note Section */
+    .delivery-note-section {
+      background: linear-gradient(135deg, rgba(212, 175, 55, 0.1), rgba(255, 204, 102, 0.05));
+      border-radius: 12px;
+      padding: 20px;
+      margin: 20px 0;
+      border: 2px solid var(--gold1);
+      backdrop-filter: blur(6px);
+      text-align: center;
+      box-shadow: 0 8px 30px rgba(212, 175, 55, 0.1);
+    }
+
+    .delivery-note-header {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      margin-bottom: 15px;
+    }
+
+    .delivery-note-header h3 {
+      font-family: var(--ff-heading);
+      color: var(--gold2);
+      font-size: 1.4rem;
+      margin: 0;
+    }
+
+    .delivery-icon {
+      width: 30px;
+      height: 30px;
+      color: var(--gold1);
+    }
+
+    .delivery-note-text {
+      font-size: 1.1rem;
+      color: #ffffff;
+      font-weight: 600;
+      line-height: 1.5;
+      background: rgba(0, 0, 0, 0.3);
+      padding: 15px;
+      border-radius: 8px;
+      border-left: 4px solid var(--gold2);
+    }
+
+    .delivery-note-text span {
+      color: var(--gold2);
+      font-weight: 700;
+    }
+
+    .delivery-note-subtext {
+      font-size: 0.9rem;
+      color: var(--muted);
+      margin-top: 10px;
+      font-style: italic;
+    }
+
     /* Location Link Section - Added at bottom */
     .location-link-section {
       background: rgba(255, 255, 255, 0.03);
@@ -470,6 +526,9 @@
       transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
       position: relative;
       overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
 
     .btn-primary:hover {
@@ -527,6 +586,34 @@
         transform: scale(1);
         box-shadow: 0 4px 15px rgba(16, 185, 129, 0.15);
       }
+    }
+
+    /* Delivery Charge Info in Cart */
+    .delivery-charge-info {
+      background: rgba(212, 175, 55, 0.1);
+      border-radius: 8px;
+      padding: 12px;
+      margin: 15px 0;
+      border-left: 3px solid var(--gold2);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .delivery-charge-info svg {
+      width: 20px;
+      height: 20px;
+      color: var(--gold2);
+      flex-shrink: 0;
+    }
+
+    .delivery-charge-text {
+      font-size: 14px;
+      color: var(--muted);
+    }
+
+    .delivery-charge-text strong {
+      color: var(--gold2);
     }
 
     /* Cart Styles */
@@ -999,6 +1086,29 @@
       </div>
     </div>
 
+    <!-- Packing & Delivery Note Section -->
+    <div class="delivery-note-section">
+      <div class="delivery-note-header">
+        <svg class="delivery-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M9 12v12M15 12v12M5 12l-2 9h18l-2-9M5 12V8c0-1.105.895-2 2-2h10c1.105 0 2 .895 2 2v4"/>
+          <circle cx="12" cy="6" r="2"/>
+          <path d="M19 12v6M5 12v6"/>
+        </svg>
+        <h3>Delivery Information</h3>
+        <svg class="delivery-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M9 12v12M15 12v12M5 12l-2 9h18l-2-9M5 12V8c0-1.105.895-2 2-2h10c1.105 0 2 .895 2 2v4"/>
+          <circle cx="12" cy="6" r="2"/>
+          <path d="M19 12v6M5 12v6"/>
+        </svg>
+      </div>
+      <div class="delivery-note-text">
+        <span>Note:</span> Per Item Rs. 25/- Extra Charge For Packing & Delivery
+      </div>
+      <div class="delivery-note-subtext">
+        *Applicable on all home delivery orders
+      </div>
+    </div>
+
     <!-- Main Menu -->
     <main class="menu">
       <div class="menu-head">
@@ -1044,7 +1154,7 @@
         <h3>Find Us on Google Maps</h3>
       </div>
       <div class="map-link-container">
-<iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3401.0184439711556!2d76.88690197561168!3d31.523653374212483!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzHCsDMxJzI1LjIiTiA3NsKwNTMnMjIuMSJF!5e0!3m2!1sen!2sin!4v1765540795679!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+<iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3401.0184439711556!2d76.88690197561168!3d31.523653374212483!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzHCsDMxJzI1LjInTiA3NsKwNTMnMjIuMSJF!5e0!3m2!1sen!2sin!4v1765540795679!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
             <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"></path>
             <circle cx="12" cy="10" r="3"></circle>
           </svg>
@@ -1133,6 +1243,8 @@
         <!-- Cart items will be inserted here -->
         <div class="cart-empty" id="cartEmpty">Your cart is empty</div>
       </div>
+      
+      <!-- Delivery charges info will be inserted here by JavaScript -->
       
       <div class="cart-total">
         <span>Total:</span>
@@ -1353,16 +1465,16 @@
       
       // Animation effect
       button.classList.add('adding');
-      button.innerHTML = 'Adding...';
+      button.innerHTML = '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12v12M15 12v12M5 12l-2 9h18l-2-9M5 12V8c0-1.105.895-2 2-2h10c1.105 0 2 .895 2 2v4"/><circle cx="12" cy="6" r="2"/></svg> Adding...';
       
       setTimeout(() => {
         button.classList.remove('adding');
         button.classList.add('added');
-        button.innerHTML = '✓ Added';
+        button.innerHTML = '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12v12M15 12v12M5 12l-2 9h18l-2-9M5 12V8c0-1.105.895-2 2-2h10c1.105 0 2 .895 2 2v4"/><circle cx="12" cy="6" r="2"/></svg> ✓ Added';
         
         setTimeout(() => {
           button.classList.remove('added');
-          button.innerHTML = 'Add to Cart';
+          button.innerHTML = '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12v12M15 12v12M5 12l-2 9h18l-2-9M5 12V8c0-1.105.895-2 2-2h10c1.105 0 2 .895 2 2v4"/><circle cx="12" cy="6" r="2"/></svg> Add to Cart';
         }, 1000);
       }, 500);
     }
@@ -1388,7 +1500,7 @@
       }
     }
 
-    // Update cart display
+    // Update cart display with delivery charges
     function updateCart() {
       // Update cart count
       const totalItems = cart.reduce((sum, item) => sum + item.quantity, 0);
@@ -1398,6 +1510,13 @@
       if (cart.length === 0) {
         cartEmpty.style.display = 'block';
         cartItems.innerHTML = '';
+        cartTotal.textContent = '₹0';
+        
+        // Remove delivery charge info if cart is empty
+        const existingInfo = document.querySelector('.delivery-charge-info');
+        if (existingInfo) {
+          existingInfo.remove();
+        }
       } else {
         cartEmpty.style.display = 'none';
         
@@ -1405,7 +1524,7 @@
         let totalAmount = 0;
         
         cart.forEach(item => {
-          const price = parseInt(item.price.replace('₹', ''));
+          const price = parseInt(item.price.replace('₹', '').split('/')[0]);
           const itemTotal = price * item.quantity;
           totalAmount += itemTotal;
           
@@ -1426,7 +1545,50 @@
         });
         
         cartItems.innerHTML = itemsHTML;
-        cartTotal.textContent = `₹${totalAmount}`;
+        
+        // Calculate delivery charges
+        const deliveryChargePerItem = 25;
+        const totalDeliveryCharges = cart.reduce((sum, item) => {
+          return sum + (deliveryChargePerItem * item.quantity);
+        }, 0);
+        
+        // Remove existing delivery charge info if present
+        const existingInfo = document.querySelector('.delivery-charge-info');
+        if (existingInfo) {
+          existingInfo.remove();
+        }
+        
+        // Add delivery charge information
+        if (totalDeliveryCharges > 0 && deliveryType === 'home') {
+          const deliveryInfoHTML = `
+            <div class="delivery-charge-info">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M9 12v12M15 12v12M5 12l-2 9h18l-2-9M5 12V8c0-1.105.895-2 2-2h10c1.105 0 2 .895 2 2v4"/>
+                <circle cx="12" cy="6" r="2"/>
+              </svg>
+              <div class="delivery-charge-text">
+                <strong>Packing & Delivery Charges:</strong> ₹${deliveryChargePerItem} per item (Total: ₹${totalDeliveryCharges})
+              </div>
+            </div>
+          `;
+          
+          // Insert after cart items but before cart total
+          cartItems.insertAdjacentHTML('afterend', deliveryInfoHTML);
+        }
+        
+        // Calculate final total
+        let finalTotal = totalAmount;
+        if (deliveryType === 'home') {
+          finalTotal = totalAmount + totalDeliveryCharges;
+        }
+        
+        // Update total display
+        cartTotal.textContent = `₹${finalTotal}`;
+        
+        // Store totals for WhatsApp order
+        window.cartSubtotal = totalAmount;
+        window.deliveryCharges = totalDeliveryCharges;
+        window.cartFinalTotal = finalTotal;
       }
     }
 
@@ -1495,12 +1657,26 @@
         message += `• ${item.name} - ${item.quantity} x ${item.price}\n`;
       });
       
+      // Calculate totals
       const totalAmount = cart.reduce((sum, item) => {
-        const price = parseInt(item.price.replace('₹', ''));
+        const price = parseInt(item.price.replace('₹', '').split('/')[0]);
         return sum + (price * item.quantity);
       }, 0);
       
-      message += `\n**Total Amount:** ₹${totalAmount}\n\n`;
+      // Calculate delivery charges
+      const deliveryChargePerItem = 25;
+      const totalDeliveryCharges = cart.reduce((sum, item) => {
+        return sum + (deliveryChargePerItem * item.quantity);
+      }, 0);
+      
+      const finalTotal = deliveryType === 'home' ? totalAmount + totalDeliveryCharges : totalAmount;
+      
+      message += `\n**Order Summary:**\n`;
+      message += `Subtotal: ₹${totalAmount}\n`;
+      if (deliveryType === 'home') {
+        message += `Packing & Delivery Charges: ₹${totalDeliveryCharges} (₹${deliveryChargePerItem} per item)\n`;
+      }
+      message += `\n**Total Amount:** ₹${finalTotal}\n\n`;
       message += `Thank you!`;
       
       // Encode the message for WhatsApp URL
@@ -1541,7 +1717,13 @@
           </div>
           <div class="card-footer">
             <div class="price">${item.price}</div>
-            <button class="btn-primary" onclick="addToCart(${JSON.stringify(item).replace(/"/g, '&quot;')}, this)">Add to Cart</button>
+            <button class="btn-primary" onclick="addToCart(${JSON.stringify(item).replace(/"/g, '&quot;')}, this)">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M9 12v12M15 12v12M5 12l-2 9h18l-2-9M5 12V8c0-1.105.895-2 2-2h10c1.105 0 2 .895 2 2v4"/>
+                <circle cx="12" cy="6" r="2"/>
+              </svg>
+              Add to Cart
+            </button>
           </div>
         </div>
       `).join('');
@@ -1594,6 +1776,17 @@
       document.getElementById('customerName').addEventListener('input', updateCustomerDetailsSummary);
       document.getElementById('customerMobile').addEventListener('input', updateCustomerDetailsSummary);
       document.getElementById('customerAddress').addEventListener('input', updateCustomerDetailsSummary);
+      
+      // Update cart when delivery type changes
+      document.getElementById('restaurantOption').addEventListener('click', () => {
+        selectDeliveryOption('restaurant');
+        updateCart();
+      });
+      
+      document.getElementById('homeDeliveryOption').addEventListener('click', () => {
+        selectDeliveryOption('home');
+        updateCart();
+      });
     });
 
     // Make functions available globally
@@ -1603,11 +1796,4 @@
     window.selectDeliveryOption = selectDeliveryOption;
   </script>
 </body>
-
 </html>
-
-
-
-
-
-
