@@ -65,7 +65,7 @@
       color: #e8e6e3;
       font-family: var(--ff-ui);
       -webkit-font-smoothing: antialiased;
-      padding: 16px;
+      padding: 16px 16px 10px 16px;
       display: flex;
       justify-content: center;
       line-height: 1.5;
@@ -79,86 +79,64 @@
       gap: var(--gap);
     }
 
-    /* Cafe Header - Original Style */
-    /* .cafe-header {
+    /* Cafe Header - Compact Style */
+    .cafe-header {
       text-align: center;
-      margin-bottom: 30px;
-      padding: 20px 0;
+      margin-bottom: 5px;
+      padding: 5px 0;
     }
 
-    .cafe-name {
-      font-family: 'Playfair Display', serif;
-      font-size: 3.5rem;
-      font-weight: 800;
-      color: var(--gold1);
-      text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.1);
-      line-height: 1;
-      margin-bottom: 5px;
-      position: relative;
-      display: inline-block;
-    } */
-/* 
-    .cafe-name::after {
-      content: '';
-      position: absolute;
-      bottom: -8px;
-      left: 50%;
-      transform: translateX(-50%);
-      width: 80px;
-      height: 2px;
-      background: var(--gold1);
-    } */
-/* 
-    .cafe-subtitle {
-      font-size: 1.2rem;
-      color: var(--orange);
-      letter-spacing: 3px;
-      text-transform: uppercase;
-      font-weight: 700;
-      margin-top: 10px;
-    } */
+    .cafe-header img {
+      width: 400px;
+      height: auto;
+      display: block;
+      margin: 0 auto 8px auto;
+      max-width: 100%;
+    }
 
     .location-info {
       font-size: 1rem;
-      margin-top: 15px;
-      line-height: 1.6;
+      margin-top: 5px;
+      line-height: 1.3;
     }
 
     .location-text {
       font-weight: 700;
       color: #ffffff;
-      margin-bottom: 8px;
+      margin-bottom: 5px;
+      font-size: 0.95rem;
     }
 
     .address {
       color: var(--green);
       font-weight: 700;
-      font-size: 1.05rem;
-      margin-bottom: 8px;
+      font-size: 1rem;
+      margin-bottom: 5px;
     }
 
     .mobile-numbers {
       color: #ffffff;
       font-weight: 700;
-      font-size: 1.05rem;
-      margin-bottom: 15px;
+      font-size: 1rem;
+      margin-bottom: 8px;
     }
 
     .veg-nonveg {
       display: flex;
       justify-content: center;
-      gap: 30px;
-      margin-top: 20px;
+      gap: 20px;
+      margin-top: 10px;
     }
 
     .veg, .nonveg {
       display: flex;
       align-items: center;
-      gap: 8px;
+      gap: 6px;
       font-weight: 500;
-      padding: 8px 16px;
+      padding: 6px 12px;
       border-radius: 30px;
       transition: all 0.3s ease;
+      font-size: 0.9rem;
     }
 
     .veg {
@@ -172,13 +150,13 @@
     }
 
     .veg:hover, .nonveg:hover {
-      transform: translateY(-3px);
+      transform: translateY(-2px);
       box-shadow: var(--shadow);
     }
 
     .symbol {
-      width: 16px;
-      height: 16px;
+      width: 14px;
+      height: 14px;
       border-radius: 50%;
       display: inline-block;
     }
@@ -193,12 +171,21 @@
       border: 2px solid #c62828;
     }
 
+    /* Menu Heading */
+    h3 {
+      font-family: var(--ff-heading);
+      font-size: 1.8rem;
+      color: var(--gold2);
+      margin: 5px 0 10px 0;
+      text-align: center;
+    }
+
     /* Packing & Delivery Note Section */
     .delivery-note-section {
       background: linear-gradient(135deg, rgba(212, 175, 55, 0.1), rgba(255, 204, 102, 0.05));
       border-radius: 12px;
-      padding: 20px;
-      margin: 20px 0;
+      padding: 15px;
+      margin: 15px 0;
       border: 2px solid var(--gold1);
       backdrop-filter: blur(6px);
       text-align: center;
@@ -209,30 +196,30 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      gap: 12px;
-      margin-bottom: 15px;
+      gap: 10px;
+      margin-bottom: 10px;
     }
 
     .delivery-note-header h3 {
       font-family: var(--ff-heading);
       color: var(--gold2);
-      font-size: 1.4rem;
+      font-size: 1.3rem;
       margin: 0;
     }
 
     .delivery-icon {
-      width: 30px;
-      height: 30px;
+      width: 25px;
+      height: 25px;
       color: var(--gold1);
     }
 
     .delivery-note-text {
-      font-size: 1.1rem;
+      font-size: 1rem;
       color: #ffffff;
       font-weight: 600;
-      line-height: 1.5;
+      line-height: 1.4;
       background: rgba(0, 0, 0, 0.3);
-      padding: 15px;
+      padding: 12px;
       border-radius: 8px;
       border-left: 4px solid var(--gold2);
     }
@@ -243,18 +230,18 @@
     }
 
     .delivery-note-subtext {
-      font-size: 0.9rem;
+      font-size: 0.85rem;
       color: var(--muted);
-      margin-top: 10px;
+      margin-top: 8px;
       font-style: italic;
     }
 
-    /* Location Link Section - Added at bottom */
+    /* Location Link Section */
     .location-link-section {
       background: rgba(255, 255, 255, 0.03);
       border-radius: 12px;
-      padding: 20px;
-      margin: 20px 0;
+      padding: 15px;
+      margin: 15px 0;
       border: 1px solid rgba(255, 255, 255, 0.05);
       backdrop-filter: blur(6px);
       text-align: center;
@@ -264,20 +251,20 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      gap: 10px;
-      margin-bottom: 15px;
+      gap: 8px;
+      margin-bottom: 12px;
     }
 
     .location-link-header h3 {
       font-family: var(--ff-heading);
       color: var(--gold2);
-      font-size: 1.3rem;
+      font-size: 1.2rem;
       margin: 0;
     }
 
     .location-icon {
-      width: 24px;
-      height: 24px;
+      width: 22px;
+      height: 22px;
       color: var(--gold1);
     }
 
@@ -289,25 +276,25 @@
     .map-link {
       display: inline-flex;
       align-items: center;
-      gap: 8px;
-      padding: 12px 24px;
+      gap: 6px;
+      padding: 10px 20px;
       background: linear-gradient(90deg, var(--gold1), var(--gold2));
       color: #0b0b0d;
       text-decoration: none;
       border-radius: 8px;
       font-weight: 700;
-      font-size: 1rem;
+      font-size: 0.9rem;
       transition: all 0.3s ease;
     }
 
     .map-link:hover {
-      transform: translateY(-3px);
+      transform: translateY(-2px);
       box-shadow: 0 8px 25px rgba(212, 175, 55, 0.3);
     }
 
     .map-link svg {
-      width: 20px;
-      height: 20px;
+      width: 18px;
+      height: 18px;
     }
 
     /* Header and Navigation */
@@ -377,14 +364,14 @@
     /* Tabs Navigation */
     .tabs-container {
       position: relative;
-      margin-bottom: 10px;
+      margin-bottom: 8px;
     }
 
     .tabs-scroll {
       display: flex;
-      gap: 8px;
+      gap: 6px;
       overflow-x: auto;
-      padding: 8px 0;
+      padding: 6px 0;
       scrollbar-width: none;
       -ms-overflow-style: none;
     }
@@ -394,11 +381,11 @@
     }
 
     .tab {
-      padding: 10px 16px;
+      padding: 8px 14px;
       border-radius: 999px;
       background: transparent;
       border: 1px solid rgba(255, 255, 255, 0.03);
-      font-size: 14px;
+      font-size: 13px;
       color: var(--muted);
       cursor: pointer;
       white-space: nowrap;
@@ -416,30 +403,30 @@
     .menu-grid {
       display: grid;
       grid-template-columns: 1fr;
-      gap: 16px;
-      margin-bottom: 20px;
+      gap: 14px;
+      margin-bottom: 15px;
     }
 
     .card {
       background: linear-gradient(180deg, rgba(255, 255, 255, 0.015), rgba(255, 255, 255, 0.01));
       border-radius: 12px;
-      padding: 16px;
+      padding: 14px;
       display: flex;
       flex-direction: column;
-      gap: 12px;
+      gap: 10px;
       border: 1px solid rgba(255, 255, 255, 0.03);
       box-shadow: 0 8px 24px rgba(2, 6, 23, 0.6);
       transition: transform 0.28s cubic-bezier(0.2, 0.9, 0.2, 1), box-shadow 0.28s;
     }
 
     .card:hover {
-      transform: translateY(-5px);
+      transform: translateY(-4px);
       box-shadow: 0 12px 30px rgba(2, 6, 23, 0.7);
     }
 
     .card-header {
       display: flex;
-      gap: 12px;
+      gap: 10px;
     }
 
     .thumb {
@@ -468,44 +455,44 @@
     }
 
     .dish {
-      font-size: 16px;
+      font-size: 15px;
       font-weight: 600;
-      margin: 0 0 4px 0;
+      margin: 0 0 3px 0;
       font-family: var(--ff-heading);
       line-height: 1.3;
     }
 
     .desc {
       color: var(--muted);
-      font-size: 13px;
-      margin-top: 4px;
+      font-size: 12px;
+      margin-top: 3px;
     }
 
     .card-footer {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      gap: 12px;
+      gap: 10px;
     }
 
     .price {
       font-weight: 700;
-      font-size: 16px;
+      font-size: 15px;
       color: var(--gold2);
       flex-shrink: 0;
     }
 
     .tags {
       display: flex;
-      gap: 6px;
+      gap: 5px;
       flex-wrap: wrap;
     }
 
     .pill {
-      padding: 4px 8px;
+      padding: 3px 6px;
       border-radius: 999px;
       border: 1px solid rgba(255, 255, 255, 0.03);
-      font-size: 11px;
+      font-size: 10px;
       color: var(--muted);
       background: transparent;
     }
@@ -514,15 +501,15 @@
     .btn-primary {
       background: linear-gradient(90deg, var(--gold1), var(--gold2));
       border: none;
-      padding: 8px 16px;
+      padding: 7px 14px;
       border-radius: 8px;
       color: #0b0b0d;
       font-weight: 700;
       cursor: pointer;
       box-shadow: 0 4px 15px rgba(212, 175, 55, 0.15);
-      font-size: 13px;
+      font-size: 12px;
       width: auto;
-      min-width: 100px;
+      min-width: 90px;
       transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
       position: relative;
       overflow: hidden;
@@ -592,23 +579,23 @@
     .delivery-charge-info {
       background: rgba(212, 175, 55, 0.1);
       border-radius: 8px;
-      padding: 12px;
-      margin: 15px 0;
+      padding: 10px;
+      margin: 12px 0;
       border-left: 3px solid var(--gold2);
       display: flex;
       align-items: center;
-      gap: 10px;
+      gap: 8px;
     }
 
     .delivery-charge-info svg {
-      width: 20px;
-      height: 20px;
+      width: 18px;
+      height: 18px;
       color: var(--gold2);
       flex-shrink: 0;
     }
 
     .delivery-charge-text {
-      font-size: 14px;
+      font-size: 13px;
       color: var(--muted);
     }
 
@@ -681,7 +668,7 @@
       width: 100%;
       max-width: 500px;
       border-radius: var(--card-radius);
-      padding: 20px;
+      padding: 18px;
       box-shadow: var(--shadow);
       border: 1px solid rgba(255, 255, 255, 0.03);
       max-height: 80vh;
@@ -692,14 +679,14 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      margin-bottom: 20px;
+      margin-bottom: 18px;
       border-bottom: 1px solid rgba(255, 255, 255, 0.03);
-      padding-bottom: 12px;
+      padding-bottom: 10px;
     }
 
     .cart-title {
       font-family: var(--ff-heading);
-      font-size: 22px;
+      font-size: 20px;
       margin: 0;
       color: var(--gold2);
     }
@@ -708,19 +695,19 @@
       background: transparent;
       border: none;
       color: var(--muted);
-      font-size: 24px;
+      font-size: 22px;
       cursor: pointer;
     }
 
     .cart-items {
-      margin-bottom: 20px;
+      margin-bottom: 18px;
     }
 
     .cart-item {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: 12px 0;
+      padding: 10px 0;
       border-bottom: 1px solid rgba(255, 255, 255, 0.03);
     }
 
@@ -730,38 +717,38 @@
 
     .item-name {
       font-weight: 600;
-      margin: 0 0 4px 0;
-      font-size: 15px;
+      margin: 0 0 3px 0;
+      font-size: 14px;
     }
 
     .item-price {
       color: var(--gold2);
-      font-size: 14px;
+      font-size: 13px;
     }
 
     .item-quantity {
       display: flex;
       align-items: center;
-      gap: 10px;
+      gap: 8px;
     }
 
     .quantity-btn {
       background: rgba(255, 255, 255, 0.03);
       border: 1px solid rgba(255, 255, 255, 0.03);
       color: var(--muted);
-      width: 28px;
-      height: 28px;
+      width: 26px;
+      height: 26px;
       border-radius: 50%;
       display: flex;
       align-items: center;
       justify-content: center;
       cursor: pointer;
-      font-size: 16px;
+      font-size: 15px;
     }
 
     .quantity {
       font-weight: 600;
-      min-width: 20px;
+      min-width: 18px;
       text-align: center;
     }
 
@@ -770,24 +757,24 @@
       border: none;
       color: #e74c3c;
       cursor: pointer;
-      margin-left: 12px;
-      font-size: 18px;
+      margin-left: 10px;
+      font-size: 16px;
     }
 
     .cart-empty {
       text-align: center;
       color: var(--muted);
-      padding: 20px 0;
+      padding: 15px 0;
     }
 
     .cart-total {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: 16px 0;
+      padding: 14px 0;
       border-top: 1px solid rgba(255, 255, 255, 0.03);
       font-weight: 600;
-      font-size: 18px;
+      font-size: 17px;
     }
 
     .total-amount {
@@ -797,14 +784,14 @@
     .cart-actions {
       display: flex;
       flex-direction: column;
-      gap: 12px;
-      margin-top: 16px;
+      gap: 10px;
+      margin-top: 14px;
     }
 
     .btn-whatsapp {
       background: #25D366;
       border: none;
-      padding: 14px 18px;
+      padding: 12px 16px;
       border-radius: 12px;
       color: white;
       font-weight: 700;
@@ -812,24 +799,24 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      gap: 8px;
-      font-size: 16px;
+      gap: 6px;
+      font-size: 15px;
     }
 
     .btn-clear {
       background: transparent;
       border: 1px solid rgba(255, 255, 255, 0.04);
-      padding: 12px 14px;
+      padding: 10px 12px;
       border-radius: 12px;
       color: var(--muted);
       cursor: pointer;
-      font-size: 16px;
+      font-size: 15px;
     }
 
     /* Delivery Options in Cart */
     .delivery-options {
-      margin: 20px 0;
-      padding: 20px;
+      margin: 18px 0;
+      padding: 18px;
       background: rgba(255, 255, 255, 0.015);
       border-radius: 10px;
       border: 1px solid rgba(255, 255, 255, 0.03);
@@ -837,28 +824,28 @@
 
     .options-title {
       font-family: var(--ff-heading);
-      font-size: 18px;
-      margin-bottom: 15px;
+      font-size: 16px;
+      margin-bottom: 12px;
       color: var(--gold2);
       display: flex;
       align-items: center;
-      gap: 10px;
+      gap: 8px;
     }
 
     .options-title svg {
-      width: 20px;
-      height: 20px;
+      width: 18px;
+      height: 18px;
     }
 
     .delivery-option-buttons {
       display: flex;
-      gap: 10px;
-      margin-bottom: 20px;
+      gap: 8px;
+      margin-bottom: 18px;
     }
 
     .option-btn {
       flex: 1;
-      padding: 12px;
+      padding: 10px;
       border-radius: 8px;
       background: transparent;
       border: 2px solid rgba(255, 255, 255, 0.08);
@@ -869,7 +856,8 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      gap: 8px;
+      gap: 6px;
+      font-size: 14px;
     }
 
     .option-btn:hover {
@@ -883,8 +871,8 @@
     }
 
     .option-btn svg {
-      width: 18px;
-      height: 18px;
+      width: 16px;
+      height: 16px;
     }
 
     /* Delivery Forms */
@@ -909,25 +897,25 @@
     }
 
     .form-group {
-      margin-bottom: 15px;
+      margin-bottom: 12px;
     }
 
     .form-label {
       display: block;
-      margin-bottom: 8px;
+      margin-bottom: 6px;
       font-weight: 600;
       color: var(--muted);
-      font-size: 14px;
+      font-size: 13px;
     }
 
     .form-input {
       width: 100%;
-      padding: 12px 16px;
+      padding: 10px 14px;
       border-radius: 8px;
       background: rgba(255, 255, 255, 0.03);
       border: 1px solid rgba(255, 255, 255, 0.05);
       color: white;
-      font-size: 16px;
+      font-size: 15px;
       transition: all 0.3s ease;
     }
 
@@ -945,8 +933,8 @@
     .customer-details-summary {
       background: rgba(255, 255, 255, 0.02);
       border-radius: 8px;
-      padding: 15px;
-      margin: 15px 0;
+      padding: 12px;
+      margin: 12px 0;
       border: 1px solid rgba(255, 255, 255, 0.03);
       display: none;
     }
@@ -959,56 +947,48 @@
     .summary-title {
       font-weight: 600;
       color: var(--gold2);
-      margin-bottom: 10px;
+      margin-bottom: 8px;
       display: flex;
       align-items: center;
-      gap: 8px;
+      gap: 6px;
+      font-size: 14px;
     }
 
     .summary-title svg {
-      width: 18px;
-      height: 18px;
+      width: 16px;
+      height: 16px;
     }
 
     .summary-details {
-      font-size: 14px;
+      font-size: 13px;
       color: var(--muted);
-      line-height: 1.6;
+      line-height: 1.5;
     }
 
     .summary-details div {
-      margin-bottom: 5px;
+      margin-bottom: 4px;
     }
 
     /* Footer */
     .footer {
       text-align: center;
-      padding: 20px 0;
+      padding: 15px 0;
       color: var(--muted);
-      font-size: 14px;
+      font-size: 13px;
       border-top: 1px solid rgba(255, 255, 255, 0.03);
-      margin-top: 20px;
-    }
-
-    /* Gold Line */
-    .gold-line {
-      height: 3px;
-      border-radius: 999px;
-      background: linear-gradient(90deg, var(--gold1), var(--gold2));
-      box-shadow: 0 8px 30px rgba(212, 175, 55, 0.08);
-      margin: 8px 0 16px 0;
+      margin-top: 15px;
     }
 
     /* Tablet and Desktop Styles */
     @media (min-width: 768px) {
       body {
-        padding: 24px;
+        padding: 20px 20px 10px 20px;
       }
       
       .container {
         display: grid;
         grid-template-columns: 1fr;
-        gap: 24px;
+        gap: 20px;
         align-items: start;
       }
       
@@ -1064,15 +1044,12 @@
 </head>
 <body>
   <div class="container">
-    <!-- Cafe Header - Original Style -->
+    <!-- Cafe Header - Compact Style -->
     <div class="cafe-header">
-<img src="logo2.png" alt="Logo" style="width:400px; height:auto; display:block; margin: 0 auto;">
-      <!-- <div class="cafe-name"> </div> -->
-      <!-- <div class="cafe-subtitle"> </div> -->
+      <img src="logo2.png" alt="Logo">
       <div class="location-info">
         <div class="location-text">Location:</div>
         <div class="address">village salah, Near Dental Collage sunder Nagar, Distt,Mandi(h.p) Mob: 7018582821</div>
-        <!-- <div class="mobile-numbers"> mo.no.+91  7018582821</div> -->
       </div>
       <div class="veg-nonveg">
         <div class="veg">
@@ -1086,7 +1063,8 @@
       </div>
     </div>
 
-       <h3>Menu</h3>
+    <h3>Menu</h3>
+    
     <!-- Main Menu -->
     <main class="menu">
       <div class="menu-head">
@@ -1100,20 +1078,20 @@
           </div>
 
           <div class="tabs-scroll">
-<button class="tab active" data-cat="all">All</button>
-<button class="tab" data-cat="BREAKFAST">Breakfast</button>
-<button class="tab" data-cat="RICE">Rice</button>
-<button class="tab" data-cat="SNACKS">Snacks</button>
-<button class="tab" data-cat="PIZZA">Pizza</button>
-<button class="tab" data-cat="DRINKS">Drinks</button>
-<button class="tab" data-cat="SOUTH INDIAN">South Indian</button>
-<button class="tab" data-cat="NOODLES">Noodles</button>
-<button class="tab" data-cat="CHINESE SNACKS">Chinese Snacks</button>
-<button class="tab" data-cat="SHAKES">Shakes</button>
-<button class="tab" data-cat="MINI MEALS">Mini Meals</button>
-<button class="tab" data-cat="MOMO'S">Momos</button>
-<button class="tab" data-cat="Thali">Thali</button>      
-    </div>
+            <button class="tab active" data-cat="all">All</button>
+            <button class="tab" data-cat="BREAKFAST">Breakfast</button>
+            <button class="tab" data-cat="RICE">Rice</button>
+            <button class="tab" data-cat="SNACKS">Snacks</button>
+            <button class="tab" data-cat="PIZZA">Pizza</button>
+            <button class="tab" data-cat="DRINKS">Drinks</button>
+            <button class="tab" data-cat="SOUTH INDIAN">South Indian</button>
+            <button class="tab" data-cat="NOODLES">Noodles</button>
+            <button class="tab" data-cat="CHINESE SNACKS">Chinese Snacks</button>
+            <button class="tab" data-cat="SHAKES">Shakes</button>
+            <button class="tab" data-cat="MINI MEALS">Mini Meals</button>
+            <button class="tab" data-cat="MOMO'S">Momos</button>
+            <button class="tab" data-cat="Thali">Thali</button>      
+          </div>
         </div>
       </div>
 
@@ -1122,8 +1100,6 @@
       </section>
     </main>
 
-
-    
     <!-- Packing & Delivery Note Section -->
     <div class="delivery-note-section">
       <div class="delivery-note-header">
@@ -1132,9 +1108,7 @@
           <circle cx="12" cy="6" r="2"/>
           <path d="M19 12v6M5 12v6"/>
         </svg>
-        
-
- <h3>Delivery Information</h3>
+        <h3>Delivery Information</h3>
         <svg class="delivery-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
           <path d="M9 12v12M15 12v12M5 12l-2 9h18l-2-9M5 12V8c0-1.105.895-2 2-2h10c1.105 0 2 .895 2 2v4"/>
           <circle cx="12" cy="6" r="2"/>
@@ -1149,8 +1123,7 @@
       </div>
     </div>
 
-        
-    <!-- Location Link Section - Added at bottom -->
+    <!-- Location Link Section -->
     <div class="location-link-section">
       <div class="location-link-header">
         <svg class="location-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -1160,12 +1133,7 @@
         <h3>Find Us on Google Maps</h3>
       </div>
       <div class="map-link-container">
-<iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3401.0184439711556!2d76.88690197561168!3d31.523653374212483!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzHCsDMxJzI1LjInTiA3NsKwNTMnMjIuMSJF!5e0!3m2!1sen!2sin!4v1765540795679!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"></path>
-            <circle cx="12" cy="10" r="3"></circle>
-          </svg>
-          Open in Google Maps
-        </a>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3401.0184439711556!2d76.88690197561168!3d31.523653374212483!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzHCsDMxJzI1LjInTiA3NsKwNTMnMjIuMSJF!5e0!3m2!1sen!2sin!4v1765540795679!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
     </div>
   </div>
@@ -1272,88 +1240,84 @@
   <script>
     // Menu Data
     const data = [
-
- {"id":1,"cat":"BREAKFAST","name":"Aloo Paratha / आलू पराठा","price":"₹30","desc":"Traditional stuffed potato paratha served fresh","tags":["Veg","Breakfast","North Indian"],"img":"img/aloo-paratha.jpeg"},
-{"id":2,"cat":"BREAKFAST","name":"Gobhi Paratha / गोभी पराठा","price":"₹40","desc":"Cauliflower stuffed flatbread cooked with spices","tags":["Veg","Breakfast","North Indian"],"img":"img/gobhi-paratha.jpeg"},
-{"id":3,"cat":"BREAKFAST","name":"Muli Paratha / मुळी पराठा","price":"₹40","desc":"Radish stuffed paratha with traditional flavors","tags":["Veg","Breakfast","Seasonal"],"img":"img/muli-paratha.jpeg"},
-{"id":4,"cat":"BREAKFAST","name":"Onion Paratha / कांदा पराठा","price":"₹40","desc":"Onion filled crispy paratha with herbs","tags":["Veg","Breakfast","Spicy"],"img":"img/onion-paratha.jpeg"},
-{"id":5,"cat":"BREAKFAST","name":"Paneer Paratha / पनीर पराठा","price":"₹60","desc":"Cottage cheese stuffed paratha, rich and creamy","tags":["Veg","Breakfast","Premium"],"img":"img/paneer-paratha.jpeg"},
-{"id":6,"cat":"BREAKFAST","name":"Plain Paratha / साधा पराठा","price":"₹25","desc":"Simple unleavened flatbread without stuffing","tags":["Veg","Breakfast","Basic"],"img":"img/plain-paratha.jpeg"},
-{"id":7,"cat":"BREAKFAST","name":"Lachcha Paratha / लच्छा पराठा","price":"₹30","desc":"Layered flaky paratha, crispy and buttery","tags":["Veg","Breakfast","Layered"],"img":"img/lachcha-paratha.jpeg"},
-{"id":8,"cat":"BREAKFAST","name":"Half Fry Egg / अर्धे तळलेले अंडे","price":"₹60","desc":"Sunny side up egg, half fried to perfection","tags":["Non-Veg","Breakfast","Egg"],"img":"img/half-fry-egg.jpeg"},
-{"id":9,"cat":"BREAKFAST","name":"Bread Omelette / ब्रेड ऑम्लेट","price":"₹60","desc":"Omelette sandwiched between toasted bread slices","tags":["Non-Veg","Breakfast","Egg"],"img":"img/bread-omelette.jpeg"},
-{"id":10,"cat":"BREAKFAST","name":"Egg Sandwich / अंडी सँडविच","price":"₹100","desc":"Boiled egg sandwich with veggies and mayo","tags":["Non-Veg","Breakfast","Sandwich"],"img":"img/egg-sandwich.jpeg"},
-{"id":11,"cat":"BREAKFAST","name":"Puri Sabji / पुरी भाजी","price":"₹80","desc":"Deep fried puffed bread with spicy potato curry","tags":["Veg","Breakfast","Combo"],"img":"img/puri-sabji.jpeg"},
-{"id":12,"cat":"BREAKFAST","name":"Tea / चहा","price":"₹15","desc":"Hot Indian tea with milk and sugar","tags":["Veg","Beverage","Hot"],"img":"img/tea.jpeg"},
-{"id":13,"cat":"BREAKFAST","name":"Espresso Coffee / एस्प्रेसो कॉफी","price":"₹40","desc":"Strong concentrated coffee shot","tags":["Veg","Beverage","Coffee"],"img":"img/espresso-coffee.jpeg"},
-{"id":14,"cat":"RICE","name":"Veg Fried Rice / वेज फ्राइड राइस","price":"₹160","desc":"Assorted vegetables stir-fried with rice and spices","tags":["Veg","Rice","Chinese"],"img":"img/veg-fried-rice.jpeg"},
-{"id":15,"cat":"RICE","name":"Cheese Fried Rice / चीज़ फ्राइड राइस","price":"₹180","desc":"Fried rice with melted cheese and vegetables","tags":["Veg","Rice","Cheesy"],"img":"img/cheese-fried-rice.jpeg"},
-{"id":16,"cat":"RICE","name":"Mushroom Fried Rice / मशरूम फ्राइड राइस","price":"₹180","desc":"Mushroom and vegetable fried rice with sauces","tags":["Veg","Rice","Mushroom"],"img":"img/mushroom-fried-rice.jpeg"},
-{"id":17,"cat":"RICE","name":"Egg Fried Rice / अंडा फ्राइड राइस","price":"₹180","desc":"Egg scrambled fried rice with vegetables","tags":["Non-Veg","Rice","Egg"],"img":"img/egg-fried-rice.jpeg"},
-{"id":18,"cat":"RICE","name":"Chicken Fried Rice / चिकन फ्राइड राइस","price":"₹240","desc":"Chicken pieces fried with rice and vegetables","tags":["Non-Veg","Rice","Chicken"],"img":"img/chicken-fried-rice.jpeg"},
-{"id":19,"cat":"SNACKS","name":"White Sauce Pasta / व्हाइट सॉस पास्ता","price":"₹150","desc":"Pasta in creamy white sauce with vegetables","tags":["Veg","Italian","Pasta"],"img":"img/white-sauce-pasta.jpeg"},
-{"id":20,"cat":"SNACKS","name":"Red Sauce Pasta / रेड सॉस पास्ता","price":"₹150","desc":"Pasta in tangy tomato based red sauce","tags":["Veg","Italian","Pasta"],"img":"img/red-sauce-pasta.jpeg"},
-{"id":21,"cat":"PIZZA","name":"All in One Veg Pizza / ऑल इन वन वेज पिझ्झा","price":"₹150","desc":"Veg pizza with onion, capsicum and paneer toppings","tags":["Veg","Pizza","Italian"],"img":"img/all-in-one-veg-pizza.jpeg"},
-{"id":22,"cat":"PIZZA","name":"All in One Non-Veg Pizza / ऑल इन वन नॉन-वेज पिझ्झा","price":"₹200","desc":"Non-veg pizza with mixed toppings","tags":["Non-Veg","Pizza","Italian"],"img":"img/all-in-one-nonveg-pizza.jpeg"},
-{"id":23,"cat":"DRINKS","name":"Lassi / लस्सी","price":"₹50","desc":"Traditional yogurt based sweet drink","tags":["Veg","Beverage","Cold"],"img":"img/lassi.jpeg"},
-{"id":24,"cat":"DRINKS","name":"Lemon Soda / लिंबू सोडा","price":"₹50","desc":"Refreshing lemon soda drink","tags":["Veg","Beverage","Cold"],"img":"img/lemon-soda.jpeg"},
-{"id":25,"cat":"DRINKS","name":"Mineral Water / खनिज पाणी","price":"MRP","desc":"Bottled mineral water","tags":["Veg","Beverage","Water"],"img":"img/mineral-water.jpeg"},
-{"id":26,"cat":"DRINKS","name":"Cold Drinks / कोल्ड ड्रिंक्स","price":"MRP","desc":"Assorted cold soft drinks","tags":["Veg","Beverage","Cold"],"img":"img/cold-drinks.jpeg"},
-{"id":27,"cat":"SOUTH INDIAN","name":"Plain Dosa / साधा डोसा","price":"₹60","desc":"Traditional South Indian crispy fermented crepe","tags":["Veg","South Indian","Dosa"],"img":"img/plain-dosa.jpeg"},
-{"id":28,"cat":"SOUTH INDIAN","name":"Masala Dosa / मसाला डोसा","price":"₹80","desc":"Crispy dosa stuffed with spiced potato filling","tags":["Veg","South Indian","Dosa"],"img":"img/masala-dosa.jpeg"},
-{"id":29,"cat":"SOUTH INDIAN","name":"Paneer Masala Dosa / पनीर मसाला डोसा","price":"₹100","desc":"Dosa filled with spicy paneer and potato mixture","tags":["Veg","South Indian","Dosa"],"img":"img/paneer-masala-dosa.jpeg"},
-{"id":30,"cat":"SOUTH INDIAN","name":"Butter Plain Dosa / बटर साधा डोसा","price":"₹90","desc":"Plain dosa generously topped with butter","tags":["Veg","South Indian","Dosa"],"img":"img/butter-plain-dosa.jpeg"},
-{"id":31,"cat":"SOUTH INDIAN","name":"Butter Masala Dosa / बटर मसाला डोसा","price":"₹110","desc":"Masala dosa with extra butter for richness","tags":["Veg","South Indian","Dosa"],"img":"img/butter-masala-dosa.jpeg"},
-{"id":32,"cat":"SOUTH INDIAN","name":"Butter Paneer Dosa / बटर पनीर डोसा","price":"₹130","desc":"Paneer dosa loaded with butter","tags":["Veg","South Indian","Dosa"],"img":"img/butter-paneer-dosa.jpeg"},
-{"id":33,"cat":"SOUTH INDIAN","name":"Rawa Masala Dosa / रवा मसाला डोसा","price":"₹150","desc":"Semolina based crispy dosa with potato filling","tags":["Veg","South Indian","Dosa"],"img":"img/rawa-masala-dosa.jpeg"},
-{"id":34,"cat":"SOUTH INDIAN","name":"Rawa Paneer Dosa / रवा पनीर डोसा","price":"₹180","desc":"Semolina dosa stuffed with paneer filling","tags":["Veg","South Indian","Dosa"],"img":"img/rawa-paneer-dosa.jpeg"},
-{"id":35,"cat":"SOUTH INDIAN","name":"Vada Sambar / वडा सांबर","price":"₹80","desc":"Lentil doughnuts served with sambar and chutney","tags":["Veg","South Indian","Snack"],"img":"img/vada-sambar.jpeg"},
-{"id":36,"cat":"SOUTH INDIAN","name":"Idli Sambar / इडली सांबर","price":"₹80","desc":"Steamed rice cakes served with sambar","tags":["Veg","South Indian","Breakfast"],"img":"img/idli-sambar.jpeg"},
-{"id":37,"cat":"SOUTH INDIAN","name":"Onion Uttapam / कांदा उत्तपम","price":"₹80","desc":"Thick pancake with onions and spices","tags":["Veg","South Indian","Uttapam"],"img":"img/onion-uttapam.jpeg"},
-{"id":38,"cat":"SOUTH INDIAN","name":"Veg Uttapam / वेज उत्तपम","price":"₹100","desc":"Mixed vegetable pancake with chutney","tags":["Veg","South Indian","Uttapam"],"img":"img/veg-uttapam.jpeg"},
-{"id":39,"cat":"NOODLES","name":"Veg Noodles / वेज नूडल्स","price":"₹50/100","desc":"Stir fried noodles with mixed vegetables","tags":["Veg","Chinese","Noodles"],"img":"img/veg-noodles.jpeg"},
-{"id":40,"cat":"NOODLES","name":"Chilli Garlic Veg Noodles / चिल्ली गार्लिक वेज नूडल्स","price":"₹70/140","desc":"Spicy garlic flavored vegetable noodles","tags":["Veg","Chinese","Spicy"],"img":"img/chilli-garlic-veg-noodles.jpeg"},
-{"id":41,"cat":"NOODLES","name":"Cheese Noodles / चीज़ नूडल्स","price":"₹70/140","desc":"Noodles with melted cheese and vegetables","tags":["Veg","Chinese","Cheesy"],"img":"img/cheese-noodles.jpeg"},
-{"id":42,"cat":"NOODLES","name":"Chilli Garlic Cheese Noodles / चिल्ली गार्लिक चीज़ नूडल्स","price":"₹90/180","desc":"Cheesy noodles with chilli garlic flavor","tags":["Veg","Chinese","Spicy"],"img":"img/chilli-garlic-cheese-noodles.jpeg"},
-{"id":43,"cat":"NOODLES","name":"Egg Noodles / अंडा नूडल्स","price":"₹90/180","desc":"Noodles with scrambled eggs and vegetables","tags":["Non-Veg","Chinese","Noodles"],"img":"img/egg-noodles.jpeg"},
-{"id":44,"cat":"NOODLES","name":"Chicken Noodles / चिकन नूडल्स","price":"₹100/200","desc":"Chicken pieces stir fried with noodles","tags":["Non-Veg","Chinese","Noodles"],"img":"img/chicken-noodles.jpeg"},
-{"id":45,"cat":"NOODLES","name":"Chilli Garlic Chicken Noodles / चिल्ली गार्लिक चिकन नूडल्स","price":"₹120/240","desc":"Spicy chicken noodles with garlic flavor","tags":["Non-Veg","Chinese","Spicy"],"img":"img/chilli-garlic-chicken-noodles.jpeg"},
-{"id":46,"cat":"CHINESE SNACKS","name":"Chilli Paneer / चिल्ली चीज़","price":"₹200/300","desc":"Cheese cubes in spicy chilli sauce","tags":["Veg","Chinese","Snack"],"img":"img/chilli-paneer.jpeg"},
-{"id":47,"cat":"CHINESE SNACKS","name":"Chilli Gobhi / चिल्ली गोभी","price":"₹150/200","desc":"Cauliflower florets in spicy chilli sauce","tags":["Veg","Chinese","Snack"],"img":"img/chilli-gobhi.jpeg"},
-{"id":48,"cat":"CHINESE SNACKS","name":"Chilli Mushroom / चिल्ली मशरूम","price":"₹180","desc":"Mushrooms cooked in spicy chilli sauce","tags":["Veg","Chinese","Snack"],"img":"img/chilli-mushroom.jpeg"},
-{"id":49,"cat":"CHINESE SNACKS","name":"Honey Chilli Potato / हनी चिल्ली पोटॅटो","price":"₹180","desc":"Crispy potatoes in honey chilli sauce","tags":["Veg","Chinese","Snack"],"img":"img/honey-chilli-potato.jpeg"},
-{"id":50,"cat":"CHINESE SNACKS","name":"Chilli Chicken / चिल्ली चिकन","price":"₹300/500","desc":"Chicken pieces in spicy chilli sauce","tags":["Non-Veg","Chinese","Snack"],"img":"img/chilli-chicken.jpeg"},
-{"id":51,"cat":"CHINESE SNACKS","name":"Veg Manchurian / वेज मंचुरियन","price":"₹150/200","desc":"Vegetable balls in Manchurian sauce","tags":["Veg","Chinese","Snack"],"img":"img/veg-manchurian.jpeg"},
-{"id":52,"cat":"SNACKS","name":"Veg Burger / वेज बर्गर","price":"₹50","desc":"Vegetable patty burger with fresh veggies","tags":["Veg","Snack","Burger"],"img":"img/veg-burger.jpeg"},
-{"id":53,"cat":"SNACKS","name":"Egg Burger / अंडा बर्गर","price":"₹60","desc":"Burger with egg patty and vegetables","tags":["Non-Veg","Snack","Burger"],"img":"img/egg-burger.jpeg"},
-{"id":54,"cat":"SNACKS","name":"Cheese Burger / चीज़ बर्गर","price":"₹70","desc":"Burger with extra cheese and veggies","tags":["Veg","Snack","Burger"],"img":"img/cheese-burger.jpeg"},
-{"id":55,"cat":"SNACKS","name":"Chicken Burger / चिकन बर्गर","price":"₹80","desc":"Chicken patty burger with sauces","tags":["Non-Veg","Snack","Burger"],"img":"img/chicken-burger.jpeg"},
-{"id":56,"cat":"SNACKS","name":"Veg Club Sandwich / वेज क्लब सँडविच","price":"₹100","desc":"Three layered vegetable sandwich with fillings","tags":["Veg","Snack","Sandwich"],"img":"img/veg-club-sandwich.jpeg"},
-{"id":57,"cat":"SNACKS","name":"Cheese Sandwich Grilled / ग्रिल्ड चीज़ सँडविच","price":"₹150","desc":"Grilled sandwich with melted cheese","tags":["Veg","Snack","Sandwich"],"img":"img/cheese-sandwich-grilled.jpeg"},
-{"id":58,"cat":"SNACKS","name":"Chicken Sandwich Grilled / ग्रिल्ड चिकन सँडविच","price":"₹200","desc":"Grilled sandwich with chicken filling","tags":["Non-Veg","Snack","Sandwich"],"img":"img/chicken-sandwich-grilled.jpeg"},
-{"id":59,"cat":"SNACKS","name":"French Fries / फ्रेंच फ्राइज","price":"₹100","desc":"Crispy golden fried potato fries","tags":["Veg","Snack","Fast Food"],"img":"img/french-fries.jpeg"},
-{"id":60,"cat":"SNACKS","name":"Cheese Spring Roll / चीज़ स्प्रिंग रोल","price":"₹120","desc":"Crispy rolls filled with cheese and vegetables","tags":["Veg","Snack","Chinese"],"img":"img/cheese-spring-roll.jpeg"},
-{"id":61,"cat":"SNACKS","name":"Chicken Spring Roll / चिकन स्प्रिंग रोल","price":"₹150","desc":"Crispy rolls with chicken and vegetable filling","tags":["Non-Veg","Snack","Chinese"],"img":"img/chicken-spring-roll.jpeg"},
-{"id":62,"cat":"SHAKES","name":"Strawberry Shake / स्ट्रॉबेरी शेक","price":"₹80","desc":"Fresh strawberry milkshake","tags":["Veg","Beverage","Cold"],"img":"img/strawberry-shake.jpeg"},
-{"id":63,"cat":"SHAKES","name":"Vanilla Shake / व्हॅनिला शेक","price":"₹80","desc":"Creamy vanilla flavored milkshake","tags":["Veg","Beverage","Cold"],"img":"img/vanilla-shake.jpeg"},
-{"id":64,"cat":"SHAKES","name":"Cold Coffee / कोल्ड कॉफी","price":"₹80","desc":"Iced coffee milkshake","tags":["Veg","Beverage","Cold"],"img":"img/cold-coffee.jpeg"},
-{"id":65,"cat":"SHAKES","name":"Chocolate Shake / चॉकलेट शेक","price":"₹100","desc":"Rich chocolate milkshake","tags":["Veg","Beverage","Cold"],"img":"img/chocolate-shake.jpeg"},
-{"id":66,"cat":"MINI MEALS","name":"Channa Samosa / चणा समोसा","price":"₹30/50","desc":"Samosa served with spicy chickpea curry","tags":["Veg","Snack","Street Food"],"img":"img/channa-samosa.jpeg"},
-{"id":67,"cat":"MINI MEALS","name":"Channa Aloo Tikki / चणा आलू टिक्की","price":"₹60","desc":"Potato patties served with chickpea curry","tags":["Veg","Snack","Street Food"],"img":"img/channa-aloo-tikki.jpeg"},
-{"id":68,"cat":"MINI MEALS","name":"Papri Chaat / पापडी चाट","price":"₹60","desc":"Crispy papdi with yogurt and chutneys","tags":["Veg","Snack","Street Food"],"img":"img/papri-chaat.jpeg"},
-{"id":69,"cat":"MINI MEALS","name":"Dahi Bhalle / दही भल्ले","price":"₹60","desc":"Lentil dumplings in yogurt with spices","tags":["Veg","Snack","Street Food"],"img":"img/dahi-bhalle.jpeg"},
-{"id":70,"cat":"MINI MEALS","name":"Chole Bhature / छोले भटूरे","price":"₹80","desc":"Spicy chickpeas with deep fried bread","tags":["Veg","Snack","North Indian"],"img":"img/chole-bhature.jpeg"},
-{"id":71,"cat":"MINI MEALS","name":"Pav Bhaji / पाव भाजी","price":"₹80","desc":"Spicy vegetable mash with buttered buns","tags":["Veg","Snack","Street Food"],"img":"img/pav-bhaji.jpeg"},
-{"id":72,"cat":"MINI MEALS","name":"Chole Kulche / छोले कुलचे","price":"₹80","desc":"Chickpea curry with leavened bread","tags":["Veg","Snack","North Indian"],"img":"img/chole-kulche.jpeg"},
-{"id":73,"cat":"MOMO'S","name":"Veg Momo's (Steamed) / वेज मोमोज (स्टीम्ड)","price":"₹50/100","desc":"Steamed vegetable dumplings with dip","tags":["Veg","Snack","Momos"],"img":"img/veg-momos-steamed.jpeg"},
-{"id":74,"cat":"MOMO'S","name":"Veg Momo's (Fried) / वेज मोमोज (फ्राइड)","price":"₹60/120","desc":"Deep fried vegetable dumplings","tags":["Veg","Snack","Momos"],"img":"img/veg-momos-fried.jpeg"},
-{"id":75,"cat":"MOMO'S","name":"Chilli Garlic Momo's / चिल्ली गार्लिक मोमोज","price":"₹180","desc":"Momos tossed in spicy chilli garlic sauce","tags":["Veg","Snack","Momos"],"img":"img/chilli-garlic-momos.jpeg"},
-{"id":76,"cat":"MOMO'S","name":"Chicken Momo's (Steamed) / चिकन मोमोज (स्टीम्ड)","price":"₹60/120","desc":"Steamed chicken dumplings","tags":["Non-Veg","Snack","Momos"],"img":"img/chicken-momos-steamed.jpeg"},
-{"id":77,"cat":"MOMO'S","name":"Chicken Momo's (Fried) / चिकन मोमोज (फ्राइड)","price":"₹70/140","desc":"Deep fried chicken dumplings","tags":["Non-Veg","Snack","Momos"],"img":"img/chicken-momos-fried.jpeg"},
-{"id":78,"cat":"MOMO'S","name":"Chilli Garlic Chicken Momo's / चिल्ली गार्लिक चिकन मोमोज","price":"₹200","desc":"Chicken momos in chilli garlic sauce","tags":["Non-Veg","Snack","Momos"],"img":"img/chilli-garlic-chicken-momos.jpeg"}
-
-
-
+      {"id":1,"cat":"BREAKFAST","name":"Aloo Paratha / आलू पराठा","price":"₹30","desc":"Traditional stuffed potato paratha served fresh","tags":["Veg","Breakfast","North Indian"],"img":"img/aloo-paratha.jpeg"},
+      {"id":2,"cat":"BREAKFAST","name":"Gobhi Paratha / गोभी पराठा","price":"₹40","desc":"Cauliflower stuffed flatbread cooked with spices","tags":["Veg","Breakfast","North Indian"],"img":"img/gobhi-paratha.jpeg"},
+      {"id":3,"cat":"BREAKFAST","name":"Muli Paratha / मुळी पराठा","price":"₹40","desc":"Radish stuffed paratha with traditional flavors","tags":["Veg","Breakfast","Seasonal"],"img":"img/muli-paratha.jpeg"},
+      {"id":4,"cat":"BREAKFAST","name":"Onion Paratha / कांदा पराठा","price":"₹40","desc":"Onion filled crispy paratha with herbs","tags":["Veg","Breakfast","Spicy"],"img":"img/onion-paratha.jpeg"},
+      {"id":5,"cat":"BREAKFAST","name":"Paneer Paratha / पनीर पराठा","price":"₹60","desc":"Cottage cheese stuffed paratha, rich and creamy","tags":["Veg","Breakfast","Premium"],"img":"img/paneer-paratha.jpeg"},
+      {"id":6,"cat":"BREAKFAST","name":"Plain Paratha / साधा पराठा","price":"₹25","desc":"Simple unleavened flatbread without stuffing","tags":["Veg","Breakfast","Basic"],"img":"img/plain-paratha.jpeg"},
+      {"id":7,"cat":"BREAKFAST","name":"Lachcha Paratha / लच्छा पराठा","price":"₹30","desc":"Layered flaky paratha, crispy and buttery","tags":["Veg","Breakfast","Layered"],"img":"img/lachcha-paratha.jpeg"},
+      {"id":8,"cat":"BREAKFAST","name":"Half Fry Egg / अर्धे तळलेले अंडे","price":"₹60","desc":"Sunny side up egg, half fried to perfection","tags":["Non-Veg","Breakfast","Egg"],"img":"img/half-fry-egg.jpeg"},
+      {"id":9,"cat":"BREAKFAST","name":"Bread Omelette / ब्रेड ऑम्लेट","price":"₹60","desc":"Omelette sandwiched between toasted bread slices","tags":["Non-Veg","Breakfast","Egg"],"img":"img/bread-omelette.jpeg"},
+      {"id":10,"cat":"BREAKFAST","name":"Egg Sandwich / अंडी सँडविच","price":"₹100","desc":"Boiled egg sandwich with veggies and mayo","tags":["Non-Veg","Breakfast","Sandwich"],"img":"img/egg-sandwich.jpeg"},
+      {"id":11,"cat":"BREAKFAST","name":"Puri Sabji / पुरी भाजी","price":"₹80","desc":"Deep fried puffed bread with spicy potato curry","tags":["Veg","Breakfast","Combo"],"img":"img/puri-sabji.jpeg"},
+      {"id":12,"cat":"BREAKFAST","name":"Tea / चहा","price":"₹15","desc":"Hot Indian tea with milk and sugar","tags":["Veg","Beverage","Hot"],"img":"img/tea.jpeg"},
+      {"id":13,"cat":"BREAKFAST","name":"Espresso Coffee / एस्प्रेसो कॉफी","price":"₹40","desc":"Strong concentrated coffee shot","tags":["Veg","Beverage","Coffee"],"img":"img/espresso-coffee.jpeg"},
+      {"id":14,"cat":"RICE","name":"Veg Fried Rice / वेज फ्राइड राइस","price":"₹160","desc":"Assorted vegetables stir-fried with rice and spices","tags":["Veg","Rice","Chinese"],"img":"img/veg-fried-rice.jpeg"},
+      {"id":15,"cat":"RICE","name":"Cheese Fried Rice / चीज़ फ्राइड राइस","price":"₹180","desc":"Fried rice with melted cheese and vegetables","tags":["Veg","Rice","Cheesy"],"img":"img/cheese-fried-rice.jpeg"},
+      {"id":16,"cat":"RICE","name":"Mushroom Fried Rice / मशरूम फ्राइड राइस","price":"₹180","desc":"Mushroom and vegetable fried rice with sauces","tags":["Veg","Rice","Mushroom"],"img":"img/mushroom-fried-rice.jpeg"},
+      {"id":17,"cat":"RICE","name":"Egg Fried Rice / अंडा फ्राइड राइस","price":"₹180","desc":"Egg scrambled fried rice with vegetables","tags":["Non-Veg","Rice","Egg"],"img":"img/egg-fried-rice.jpeg"},
+      {"id":18,"cat":"RICE","name":"Chicken Fried Rice / चिकन फ्राइड राइस","price":"₹240","desc":"Chicken pieces fried with rice and vegetables","tags":["Non-Veg","Rice","Chicken"],"img":"img/chicken-fried-rice.jpeg"},
+      {"id":19,"cat":"SNACKS","name":"White Sauce Pasta / व्हाइट सॉस पास्ता","price":"₹150","desc":"Pasta in creamy white sauce with vegetables","tags":["Veg","Italian","Pasta"],"img":"img/white-sauce-pasta.jpeg"},
+      {"id":20,"cat":"SNACKS","name":"Red Sauce Pasta / रेड सॉस पास्ता","price":"₹150","desc":"Pasta in tangy tomato based red sauce","tags":["Veg","Italian","Pasta"],"img":"img/red-sauce-pasta.jpeg"},
+      {"id":21,"cat":"PIZZA","name":"All in One Veg Pizza / ऑल इन वन वेज पिझ्झा","price":"₹150","desc":"Veg pizza with onion, capsicum and paneer toppings","tags":["Veg","Pizza","Italian"],"img":"img/all-in-one-veg-pizza.jpeg"},
+      {"id":22,"cat":"PIZZA","name":"All in One Non-Veg Pizza / ऑल इन वन नॉन-वेज पिझ्झा","price":"₹200","desc":"Non-veg pizza with mixed toppings","tags":["Non-Veg","Pizza","Italian"],"img":"img/all-in-one-nonveg-pizza.jpeg"},
+      {"id":23,"cat":"DRINKS","name":"Lassi / लस्सी","price":"₹50","desc":"Traditional yogurt based sweet drink","tags":["Veg","Beverage","Cold"],"img":"img/lassi.jpeg"},
+      {"id":24,"cat":"DRINKS","name":"Lemon Soda / लिंबू सोडा","price":"₹50","desc":"Refreshing lemon soda drink","tags":["Veg","Beverage","Cold"],"img":"img/lemon-soda.jpeg"},
+      {"id":25,"cat":"DRINKS","name":"Mineral Water / खनिज पाणी","price":"MRP","desc":"Bottled mineral water","tags":["Veg","Beverage","Water"],"img":"img/mineral-water.jpeg"},
+      {"id":26,"cat":"DRINKS","name":"Cold Drinks / कोल्ड ड्रिंक्स","price":"MRP","desc":"Assorted cold soft drinks","tags":["Veg","Beverage","Cold"],"img":"img/cold-drinks.jpeg"},
+      {"id":27,"cat":"SOUTH INDIAN","name":"Plain Dosa / साधा डोसा","price":"₹60","desc":"Traditional South Indian crispy fermented crepe","tags":["Veg","South Indian","Dosa"],"img":"img/plain-dosa.jpeg"},
+      {"id":28,"cat":"SOUTH INDIAN","name":"Masala Dosa / मसाला डोसा","price":"₹80","desc":"Crispy dosa stuffed with spiced potato filling","tags":["Veg","South Indian","Dosa"],"img":"img/masala-dosa.jpeg"},
+      {"id":29,"cat":"SOUTH INDIAN","name":"Paneer Masala Dosa / पनीर मसाला डोसा","price":"₹100","desc":"Dosa filled with spicy paneer and potato mixture","tags":["Veg","South Indian","Dosa"],"img":"img/paneer-masala-dosa.jpeg"},
+      {"id":30,"cat":"SOUTH INDIAN","name":"Butter Plain Dosa / बटर साधा डोसा","price":"₹90","desc":"Plain dosa generously topped with butter","tags":["Veg","South Indian","Dosa"],"img":"img/butter-plain-dosa.jpeg"},
+      {"id":31,"cat":"SOUTH INDIAN","name":"Butter Masala Dosa / बटर मसाला डोसा","price":"₹110","desc":"Masala dosa with extra butter for richness","tags":["Veg","South Indian","Dosa"],"img":"img/butter-masala-dosa.jpeg"},
+      {"id":32,"cat":"SOUTH INDIAN","name":"Butter Paneer Dosa / बटर पनीर डोसा","price":"₹130","desc":"Paneer dosa loaded with butter","tags":["Veg","South Indian","Dosa"],"img":"img/butter-paneer-dosa.jpeg"},
+      {"id":33,"cat":"SOUTH INDIAN","name":"Rawa Masala Dosa / रवा मसाला डोसा","price":"₹150","desc":"Semolina based crispy dosa with potato filling","tags":["Veg","South Indian","Dosa"],"img":"img/rawa-masala-dosa.jpeg"},
+      {"id":34,"cat":"SOUTH INDIAN","name":"Rawa Paneer Dosa / रवा पनीर डोसा","price":"₹180","desc":"Semolina dosa stuffed with paneer filling","tags":["Veg","South Indian","Dosa"],"img":"img/rawa-paneer-dosa.jpeg"},
+      {"id":35,"cat":"SOUTH INDIAN","name":"Vada Sambar / वडा सांबर","price":"₹80","desc":"Lentil doughnuts served with sambar and chutney","tags":["Veg","South Indian","Snack"],"img":"img/vada-sambar.jpeg"},
+      {"id":36,"cat":"SOUTH INDIAN","name":"Idli Sambar / इडली सांबर","price":"₹80","desc":"Steamed rice cakes served with sambar","tags":["Veg","South Indian","Breakfast"],"img":"img/idli-sambar.jpeg"},
+      {"id":37,"cat":"SOUTH INDIAN","name":"Onion Uttapam / कांदा उत्तपम","price":"₹80","desc":"Thick pancake with onions and spices","tags":["Veg","South Indian","Uttapam"],"img":"img/onion-uttapam.jpeg"},
+      {"id":38,"cat":"SOUTH INDIAN","name":"Veg Uttapam / वेज उत्तपम","price":"₹100","desc":"Mixed vegetable pancake with chutney","tags":["Veg","South Indian","Uttapam"],"img":"img/veg-uttapam.jpeg"},
+      {"id":39,"cat":"NOODLES","name":"Veg Noodles / वेज नूडल्स","price":"₹50/100","desc":"Stir fried noodles with mixed vegetables","tags":["Veg","Chinese","Noodles"],"img":"img/veg-noodles.jpeg"},
+      {"id":40,"cat":"NOODLES","name":"Chilli Garlic Veg Noodles / चिल्ली गार्लिक वेज नूडल्स","price":"₹70/140","desc":"Spicy garlic flavored vegetable noodles","tags":["Veg","Chinese","Spicy"],"img":"img/chilli-garlic-veg-noodles.jpeg"},
+      {"id":41,"cat":"NOODLES","name":"Cheese Noodles / चीज़ नूडल्स","price":"₹70/140","desc":"Noodles with melted cheese and vegetables","tags":["Veg","Chinese","Cheesy"],"img":"img/cheese-noodles.jpeg"},
+      {"id":42,"cat":"NOODLES","name":"Chilli Garlic Cheese Noodles / चिल्ली गार्लिक चीज़ नूडल्स","price":"₹90/180","desc":"Cheesy noodles with chilli garlic flavor","tags":["Veg","Chinese","Spicy"],"img":"img/chilli-garlic-cheese-noodles.jpeg"},
+      {"id":43,"cat":"NOODLES","name":"Egg Noodles / अंडा नूडल्स","price":"₹90/180","desc":"Noodles with scrambled eggs and vegetables","tags":["Non-Veg","Chinese","Noodles"],"img":"img/egg-noodles.jpeg"},
+      {"id":44,"cat":"NOODLES","name":"Chicken Noodles / चिकन नूडल्स","price":"₹100/200","desc":"Chicken pieces stir fried with noodles","tags":["Non-Veg","Chinese","Noodles"],"img":"img/chicken-noodles.jpeg"},
+      {"id":45,"cat":"NOODLES","name":"Chilli Garlic Chicken Noodles / चिल्ली गार्लिक चिकन नूडल्स","price":"₹120/240","desc":"Spicy chicken noodles with garlic flavor","tags":["Non-Veg","Chinese","Spicy"],"img":"img/chilli-garlic-chicken-noodles.jpeg"},
+      {"id":46,"cat":"CHINESE SNACKS","name":"Chilli Paneer / चिल्ली चीज़","price":"₹200/300","desc":"Cheese cubes in spicy chilli sauce","tags":["Veg","Chinese","Snack"],"img":"img/chilli-paneer.jpeg"},
+      {"id":47,"cat":"CHINESE SNACKS","name":"Chilli Gobhi / चिल्ली गोभी","price":"₹150/200","desc":"Cauliflower florets in spicy chilli sauce","tags":["Veg","Chinese","Snack"],"img":"img/chilli-gobhi.jpeg"},
+      {"id":48,"cat":"CHINESE SNACKS","name":"Chilli Mushroom / चिल्ली मशरूम","price":"₹180","desc":"Mushrooms cooked in spicy chilli sauce","tags":["Veg","Chinese","Snack"],"img":"img/chilli-mushroom.jpeg"},
+      {"id":49,"cat":"CHINESE SNACKS","name":"Honey Chilli Potato / हनी चिल्ली पोटॅटो","price":"₹180","desc":"Crispy potatoes in honey chilli sauce","tags":["Veg","Chinese","Snack"],"img":"img/honey-chilli-potato.jpeg"},
+      {"id":50,"cat":"CHINESE SNACKS","name":"Chilli Chicken / चिल्ली चिकन","price":"₹300/500","desc":"Chicken pieces in spicy chilli sauce","tags":["Non-Veg","Chinese","Snack"],"img":"img/chilli-chicken.jpeg"},
+      {"id":51,"cat":"CHINESE SNACKS","name":"Veg Manchurian / वेज मंचुरियन","price":"₹150/200","desc":"Vegetable balls in Manchurian sauce","tags":["Veg","Chinese","Snack"],"img":"img/veg-manchurian.jpeg"},
+      {"id":52,"cat":"SNACKS","name":"Veg Burger / वेज बर्गर","price":"₹50","desc":"Vegetable patty burger with fresh veggies","tags":["Veg","Snack","Burger"],"img":"img/veg-burger.jpeg"},
+      {"id":53,"cat":"SNACKS","name":"Egg Burger / अंडा बर्गर","price":"₹60","desc":"Burger with egg patty and vegetables","tags":["Non-Veg","Snack","Burger"],"img":"img/egg-burger.jpeg"},
+      {"id":54,"cat":"SNACKS","name":"Cheese Burger / चीज़ बर्गर","price":"₹70","desc":"Burger with extra cheese and veggies","tags":["Veg","Snack","Burger"],"img":"img/cheese-burger.jpeg"},
+      {"id":55,"cat":"SNACKS","name":"Chicken Burger / चिकन बर्गर","price":"₹80","desc":"Chicken patty burger with sauces","tags":["Non-Veg","Snack","Burger"],"img":"img/chicken-burger.jpeg"},
+      {"id":56,"cat":"SNACKS","name":"Veg Club Sandwich / वेज क्लब सँडविच","price":"₹100","desc":"Three layered vegetable sandwich with fillings","tags":["Veg","Snack","Sandwich"],"img":"img/veg-club-sandwich.jpeg"},
+      {"id":57,"cat":"SNACKS","name":"Cheese Sandwich Grilled / ग्रिल्ड चीज़ सँडविच","price":"₹150","desc":"Grilled sandwich with melted cheese","tags":["Veg","Snack","Sandwich"],"img":"img/cheese-sandwich-grilled.jpeg"},
+      {"id":58,"cat":"SNACKS","name":"Chicken Sandwich Grilled / ग्रिल्ड चिकन सँडविच","price":"₹200","desc":"Grilled sandwich with chicken filling","tags":["Non-Veg","Snack","Sandwich"],"img":"img/chicken-sandwich-grilled.jpeg"},
+      {"id":59,"cat":"SNACKS","name":"French Fries / फ्रेंच फ्राइज","price":"₹100","desc":"Crispy golden fried potato fries","tags":["Veg","Snack","Fast Food"],"img":"img/french-fries.jpeg"},
+      {"id":60,"cat":"SNACKS","name":"Cheese Spring Roll / चीज़ स्प्रिंग रोल","price":"₹120","desc":"Crispy rolls filled with cheese and vegetables","tags":["Veg","Snack","Chinese"],"img":"img/cheese-spring-roll.jpeg"},
+      {"id":61,"cat":"SNACKS","name":"Chicken Spring Roll / चिकन स्प्रिंग रोल","price":"₹150","desc":"Crispy rolls with chicken and vegetable filling","tags":["Non-Veg","Snack","Chinese"],"img":"img/chicken-spring-roll.jpeg"},
+      {"id":62,"cat":"SHAKES","name":"Strawberry Shake / स्ट्रॉबेरी शेक","price":"₹80","desc":"Fresh strawberry milkshake","tags":["Veg","Beverage","Cold"],"img":"img/strawberry-shake.jpeg"},
+      {"id":63,"cat":"SHAKES","name":"Vanilla Shake / व्हॅनिला शेक","price":"₹80","desc":"Creamy vanilla flavored milkshake","tags":["Veg","Beverage","Cold"],"img":"img/vanilla-shake.jpeg"},
+      {"id":64,"cat":"SHAKES","name":"Cold Coffee / कोल्ड कॉफी","price":"₹80","desc":"Iced coffee milkshake","tags":["Veg","Beverage","Cold"],"img":"img/cold-coffee.jpeg"},
+      {"id":65,"cat":"SHAKES","name":"Chocolate Shake / चॉकलेट शेक","price":"₹100","desc":"Rich chocolate milkshake","tags":["Veg","Beverage","Cold"],"img":"img/chocolate-shake.jpeg"},
+      {"id":66,"cat":"MINI MEALS","name":"Channa Samosa / चणा समोसा","price":"₹30/50","desc":"Samosa served with spicy chickpea curry","tags":["Veg","Snack","Street Food"],"img":"img/channa-samosa.jpeg"},
+      {"id":67,"cat":"MINI MEALS","name":"Channa Aloo Tikki / चणा आलू टिक्की","price":"₹60","desc":"Potato patties served with chickpea curry","tags":["Veg","Snack","Street Food"],"img":"img/channa-aloo-tikki.jpeg"},
+      {"id":68,"cat":"MINI MEALS","name":"Papri Chaat / पापडी चाट","price":"₹60","desc":"Crispy papdi with yogurt and chutneys","tags":["Veg","Snack","Street Food"],"img":"img/papri-chaat.jpeg"},
+      {"id":69,"cat":"MINI MEALS","name":"Dahi Bhalle / दही भल्ले","price":"₹60","desc":"Lentil dumplings in yogurt with spices","tags":["Veg","Snack","Street Food"],"img":"img/dahi-bhalle.jpeg"},
+      {"id":70,"cat":"MINI MEALS","name":"Chole Bhature / छोले भटूरे","price":"₹80","desc":"Spicy chickpeas with deep fried bread","tags":["Veg","Snack","North Indian"],"img":"img/chole-bhature.jpeg"},
+      {"id":71,"cat":"MINI MEALS","name":"Pav Bhaji / पाव भाजी","price":"₹80","desc":"Spicy vegetable mash with buttered buns","tags":["Veg","Snack","Street Food"],"img":"img/pav-bhaji.jpeg"},
+      {"id":72,"cat":"MINI MEALS","name":"Chole Kulche / छोले कुलचे","price":"₹80","desc":"Chickpea curry with leavened bread","tags":["Veg","Snack","North Indian"],"img":"img/chole-kulche.jpeg"},
+      {"id":73,"cat":"MOMO'S","name":"Veg Momo's (Steamed) / वेज मोमोज (स्टीम्ड)","price":"₹50/100","desc":"Steamed vegetable dumplings with dip","tags":["Veg","Snack","Momos"],"img":"img/veg-momos-steamed.jpeg"},
+      {"id":74,"cat":"MOMO'S","name":"Veg Momo's (Fried) / वेज मोमोज (फ्राइड)","price":"₹60/120","desc":"Deep fried vegetable dumplings","tags":["Veg","Snack","Momos"],"img":"img/veg-momos-fried.jpeg"},
+      {"id":75,"cat":"MOMO'S","name":"Chilli Garlic Momo's / चिल्ली गार्लिक मोमोज","price":"₹180","desc":"Momos tossed in spicy chilli garlic sauce","tags":["Veg","Snack","Momos"],"img":"img/chilli-garlic-momos.jpeg"},
+      {"id":76,"cat":"MOMO'S","name":"Chicken Momo's (Steamed) / चिकन मोमोज (स्टीम्ड)","price":"₹60/120","desc":"Steamed chicken dumplings","tags":["Non-Veg","Snack","Momos"],"img":"img/chicken-momos-steamed.jpeg"},
+      {"id":77,"cat":"MOMO'S","name":"Chicken Momo's (Fried) / चिकन मोमोज (फ्राइड)","price":"₹70/140","desc":"Deep fried chicken dumplings","tags":["Non-Veg","Snack","Momos"],"img":"img/chicken-momos-fried.jpeg"},
+      {"id":78,"cat":"MOMO'S","name":"Chilli Garlic Chicken Momo's / चिल्ली गार्लिक चिकन मोमोज","price":"₹200","desc":"Chicken momos in chilli garlic sauce","tags":["Non-Veg","Snack","Momos"],"img":"img/chilli-garlic-chicken-momos.jpeg"}
     ];
 
     // Cart functionality
@@ -1803,11 +1767,3 @@
   </script>
 </body>
 </html>
-
-
-
-
-
-
-
-
